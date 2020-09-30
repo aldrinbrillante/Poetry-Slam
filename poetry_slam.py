@@ -6,18 +6,8 @@ def get_file_lines(filename):
     return file_lines
 
 print(get_file_lines("poem.txt"))
+print("\n")
 
-
-def lines_printed_backwards(line_list):
-    poem_dict_lines = open(line_list, "r").readLines()
-    reverse = ''
-    num_count = len(line_list) 
-    for line in reversed(list(open("poem.txt"))):
-        num_count = num_count - 1
-        print(line.rstrip())
-        return reverse
-
-print(lines_printed_backwards("poem.txt"))
 
 
 # Create a function called lines_printed_backwards()
@@ -26,5 +16,11 @@ print(lines_printed_backwards("poem.txt"))
 
 # It should print the lines of the poem in reverse. 
 # Include the original line number at the beginning of each line
+
+def lines_printed_backwards(line_list):
+    for line in reversed(list(open("poem.txt"))):
+        print(line.rstrip())
+    return line
+print(lines_printed_backwards("poem.txt"))
 
 
