@@ -18,10 +18,36 @@ print("\n")
 # Include the original line number at the beginning of each line
 
 def lines_printed_backwards(line_list):
+    #add_num = print(len(line_list))
+    #n = add_num
+    #for loop
+        # The reversed() function returns the reversed iterator of the given sequence.
+        # The list() constructor returns a list in Python.
+        # The open() function opens a file, and returns it as a file object.
+
     for line in reversed(list(open("poem.txt"))):
         print(line.rstrip())
+    # return temp variable line
     return line
 
+# call function lines_printed_backwards
 lines_printed_backwards("poem.txt")
 
 
+# -------------------CO WORK CODE-----------------------------#
+
+def foo(ll):
+    num_lines = len(ll)
+    #print(ll)
+    ll = ll[::-1] #reverses the list
+
+    # 1 to num_lines
+    for i in range(len(ll)):
+        #print (num_lines - i)
+        #print(ll[i])
+        v = str(num_lines - i) + " " + ll[i]
+        print(v)
+
+f = open('./poem.txt' , 'r') #opens the file
+#foo([1, 2, 3, 4]) 
+foo(f.read().splitlines()) # pass a list of lines to foo 
