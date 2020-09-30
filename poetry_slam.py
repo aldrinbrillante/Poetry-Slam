@@ -21,6 +21,7 @@ def lines_printed_backwards(line_list):
     for line in reversed(list(open("poem.txt"))):
         print(line.rstrip())
     return line
-print(lines_printed_backwards("poem.txt"))
+
+lines_printed_backwards("poem.txt")
 
 
