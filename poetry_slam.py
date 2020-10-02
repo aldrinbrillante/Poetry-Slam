@@ -1,6 +1,8 @@
 # import randint() to use for the function lines_printed_random() 
 from random import randint
 
+#poem used: “No Man Is An Island” by John Donne
+
 #----------FUNCTION 1----------#
 '''
 Create a function called get_file_lines()

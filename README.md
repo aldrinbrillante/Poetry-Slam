@@ -1,5 +1,8 @@
 # Poetry-Slam
+# run poetry_slam.py
  Poetry Slam Project
+
+ Poem used: “No Man Is An Island” by John Donne
  
  Submission Requirements:
 
