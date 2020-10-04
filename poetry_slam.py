@@ -92,7 +92,7 @@ def lines_printed_custom(lines_list):
         for line in sorted(r):
             # prints line variable
             print(line, end='')
-
+#variable to open .txt file 
 poem = open('./poem.txt', 'r')
 #calls custom function
 lines_printed_custom(poem.readlines())
