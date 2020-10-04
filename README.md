@@ -3,7 +3,7 @@
  Poetry Slam Project
 
  Poem used: “No Man Is An Island” by John Donne
- 
+
  Submission Requirements:
 
 Your submitted code should be in a new (public) repo on Github.
